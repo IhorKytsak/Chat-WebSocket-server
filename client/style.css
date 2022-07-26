@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://html5book.ru/wp-content/uploads/2015/07/background48.png);
+}
+
+.activeUser {
+  position: fixed;
+  top: 20px;
+  right: 10%;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.status {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#chat {
+  min-height: 80vh;
+  margin: 0px auto 20px;
+  padding: 25px 25px 0;
+  width: 90%;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff  ;
+}
+
+li {
+  list-style: none;
+  max-width: 49%;
+  width: fit-content;
+}
+
+.messageLi {
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: #d7dd9f;
+}
+
+.nameLi {
+  font-weight: 700;
+  font-style: 15px;
+}
+
+.timeLi {
+  padding-bottom: 8px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+li.myMessage {
+  align-self: end;
+}
+
+.messageLi.myMessage {
+  background: #effdde;
+}
+
+.sendMessage {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 40px;
+}
+
+#message {
+  width: 75%;
+  border-radius: 20px 0px 0px 20px;
+  padding: 0 20px;
+  border-right: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: 20px;
+  width: 15%;
+  border-radius: 0px 20px 20px 0px;
+}
